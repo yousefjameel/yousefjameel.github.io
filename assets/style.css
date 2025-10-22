@@ -1,0 +1,232 @@
+/* --- Global Styles --- */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* --- Header Section --- */
+.header {
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+/* This pseudo-element creates the white, faded overlay */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.85); 
+    z-index: 1;
+}
+
+/* This ensures the content appears *above* the overlay */
+.header-content {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 10px 0 5px;
+    font-size: 2.8em;
+    font-weight: 700;
+    color: #222;
+}
+
+.header p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #555;
+    font-weight: 300;
+}
+
+.header p.email {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navbar a {
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #d9534f; 
+}
+
+/* --- Main Content --- */
+.main-content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.quote {
+    text-align: center;
+    font-size: 1.3em;
+    color: #888;
+    font-style: italic;
+    line-height: 1.7;
+    margin-bottom: 60px;
+    font-weight: 300;
+}
+
+.highlight {
+    color: #d9534f; 
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* --- Table Section --- */
+.table-container {
+    width: 100%;
+}
+
+.table-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.content-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.content-table th, 
+.content-table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.content-table th {
+    background-color: #f7f7f7;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+}
+
+.content-table tbody tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+
+.content-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+.content-table a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.content-table a:hover {
+    text-decoration: underline;
+}
+
+
+.form-container {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box; 
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.form-container p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #333;
+}
+
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+}
+
+
+.cta-button {
+    display: inline-block;
+    background-color: #d9534f;
+    color: #ffffff;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none; 
+    cursor: pointer; 
+    width: 100%; 
+}
+
+.cta-button:hover {
+    background-color: #c9302c;
+}
